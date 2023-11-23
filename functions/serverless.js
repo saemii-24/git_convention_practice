@@ -2,7 +2,8 @@ import axios from "axios";
 
 exports.handler = async function (event, context) {
   const apiKey = process.env.API_KEY;
-  const url = "/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList";
+  const url =
+    "http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList";
   axios
     .get(url, {
       params: {
